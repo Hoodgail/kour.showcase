@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kour Development</title>
+
+    <script async src="https://arc.io/widget.min.js#YtwhH77f"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="./src/interface/stylesheet/index.css">
+</head>
+
+<body style="background: black; overflow: hidden;" contextmenu="false">
+
+    <div class="compiling">Compiling...</div>
+
+    <script type="module">
+        import { loadModule } from '/web_modules/ts-browser/src/ts-browser.js';
+        loadModule('./src/index.ts').then(() => {
+            document.querySelector("body > div.compiling").style.display = "none"
+        });
+    </script>
+
+</body>
+
+</html>

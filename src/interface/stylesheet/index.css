@@ -1,0 +1,104 @@
+.corners {
+    --offset: -15px;
+    --size: 5px;
+    opacity: 0;
+    transition: 0.1s;
+}
+.corners.top,
+.corners.bottom {
+    position: absolute;
+    border-color: #ff5722;
+    width: var(--size);
+    height: var(--size);
+    pointer-events: none;
+}
+.corners.top {
+    top: var(--offset);
+    border-top: 1px solid;
+}
+.corners.bottom {
+    bottom: var(--offset);
+    border-bottom: 1px solid;
+}
+.corners.left {
+    left: var(--offset);
+    border-left: 1px solid;
+}
+.corners.right {
+    right: var(--offset);
+    border-right: 1px solid;
+}
+
+body {
+    color: white;
+    background: black;
+    overflow: hidden;
+    font-family: sans-serif;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+body > .title {
+    text-align: center;
+}
+
+body > .buttons {
+    display: flex;
+    width: min-content;
+    margin: auto;
+}
+
+body > .buttons > div {
+    margin: 35px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+body > .buttons > div > .label {
+    transition: 0.1s;
+}
+body > .buttons > div:hover > .label {
+    transform: scale(0.6);
+}
+
+body > .buttons > div > .corners {
+    --offset: -7px;
+    opacity: 1;
+}
+
+body > .buttons > div:hover {
+    color: #ff5722;
+}
+
+body > .buttons > div:hover > .corners {
+    --offset: -10px;
+    border-color: #ff5722;
+}
+
+body > .label {
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+body > .label > .extention {
+    color: #ff5722;
+}
+
+body > .preview {
+    width: 390px;
+    border-radius: 50px;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    user-select: none;
+    margin: auto;
+    margin-top: 20px;
+}
+
+* {
+    -webkit-user-drag: none;
+    user-select: none;
+}
