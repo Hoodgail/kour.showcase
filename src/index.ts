@@ -28,7 +28,7 @@ const label = createElement("div", {
 
 const title = createElement("h1", {
     classList: ["title"],
-    text: "Comming soon!"
+    text: "Coming soon!"
 });
 
 const buttons = createElement("div", {
@@ -47,6 +47,4 @@ document.body.append(
     title,
     buttons,
     preview
-)
-
-console.log("1")
+);
