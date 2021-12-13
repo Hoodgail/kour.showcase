@@ -36,7 +36,7 @@ const buttons = createElement("div", {
     append: [
         new Button("discord", { href: "https://discord.com/invite/n3WYRCn3g7" }).element,
         new Button("twitter", { href: "https://twitter.com/intent/user?screen_name=KourGame" }).element,
-        new Button("youtube", { href: "https://www.youtube.com/channel/UC1GQ1HXfktPYKz4wPk2VpHg?sub_confirmation=1" }).element
+        new Button("youtube", { href: "https://www.youtube.com/channel/UCN4fNLtRoqfSwMihfgt3BGw?sub_confirmation=1" }).element
     ]
 });
 
