@@ -46,7 +46,10 @@ body > .title {
 body > .buttons {
     display: flex;
     width: min-content;
-    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 body > .buttons > div {
@@ -101,4 +104,13 @@ body > .preview {
 * {
     -webkit-user-drag: none;
     user-select: none;
+}
+
+iframe.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
 }
